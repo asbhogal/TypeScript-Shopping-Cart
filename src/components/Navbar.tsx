@@ -1,15 +1,16 @@
 import {
   Box,
+  Button,
   Flex,
   Icon,
   Link,
-  List,
   ListItem,
   Spacer,
+  Text,
   UnorderedList,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import { BsCart3 } from "react-icons/bs";
+import { BsBagHeart } from "react-icons/bs";
 
 export function Navbar() {
   return (
@@ -60,7 +61,22 @@ export function Navbar() {
             </Flex>
           </UnorderedList>
           <Spacer />
-          <Icon as={BsCart3} boxSize={8} />
+          <Button variant="link">
+            <Icon as={BsBagHeart} boxSize={8} />
+            <Text
+              backgroundColor="purple"
+              display="flex"
+              justifyContent="center"
+              width={5}
+              color="white"
+              position="absolute"
+              top={25}
+              left={25}
+              borderRadius={10}
+            >
+              1
+            </Text>
+          </Button>
         </Flex>
       </header>
     </Box>
