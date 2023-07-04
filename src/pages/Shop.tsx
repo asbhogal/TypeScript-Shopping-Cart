@@ -1,12 +1,15 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
 import productItems from "../data/products.json";
+import { ProductItem } from "../components/ProductItem";
 
 export function Shop() {
   return (
     <>
-      <SimpleGrid minChildWidth="120px" spacing="20px">
+      <SimpleGrid minChildWidth="120px" spacing="20px" padding="20px">
         {productItems.map((item) => (
-          <Box>{JSON.stringify(item)}</Box>
+          <Box key={item.id} height="80px">
+            <ProductItem {...item} />
+          </Box>
         ))}
       </SimpleGrid>
     </>
