@@ -5,5 +5,35 @@
         "price": 146.99,
         "imgUrl": "/images/coat.jpg"
     },
+    {
+        "id": 2,
+        "name": "Concealer",
+        "price": 23.99,
+        "imgUrl": "/images/concealer.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Earrings",
+        "price": 59.99,
+        "imgUrl": "/images/earrings.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Lipstick",
+        "price": 65.99,
+        "imgUrl": "/images/lipstick.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Prada",
+        "price": 99.99,
+        "imgUrl": "/images/prada.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Watch",
+        "price": 79.99,
+        "imgUrl": "/images/watch.jpg"
+    }
     
 ]
