@@ -3,37 +3,43 @@
         "id": 1,
         "name": "Biege Coat",
         "price": 146.99,
-        "imgUrl": "/images/coat.jpg"
+        "imgUrl": "/images/coat.jpg",
+        "altText": "A biege coat in a mirror"
     },
     {
         "id": 2,
         "name": "Concealer",
         "price": 23.99,
-        "imgUrl": "/images/concealer.jpg"
+        "imgUrl": "/images/concealer.jpg",
+        "altText": "A pale pink concealer with a mirror"
     },
     {
         "id": 3,
         "name": "Earrings",
         "price": 59.99,
-        "imgUrl": "/images/earrings.jpg"
+        "imgUrl": "/images/earrings.jpg",
+        "altText": "A pair of ornate earrings"
     },
     {
         "id": 4,
         "name": "Lipstick",
         "price": 65.99,
-        "imgUrl": "/images/lipstick.jpg"
+        "imgUrl": "/images/lipstick.jpg",
+        "altText": "A red lipstick surrounded by figs"
     },
     {
         "id": 5,
         "name": "Prada",
         "price": 99.99,
-        "imgUrl": "/images/prada.jpg"
+        "imgUrl": "/images/prada.jpg",
+        "altText": "A bottle of Prada perfume"
     },
     {
         "id": 6,
         "name": "Watch",
         "price": 79.99,
-        "imgUrl": "/images/watch.jpg"
+        "imgUrl": "/images/watch.jpg",
+        "altText": "A black NIXON watch"
     }
     
 ]
