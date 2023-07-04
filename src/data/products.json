@@ -29,14 +29,14 @@
     },
     {
         "id": 5,
-        "name": "Prada",
+        "name": "Prada Perfume",
         "price": 99.99,
         "imgUrl": "/images/prada.jpg",
         "altText": "A bottle of Prada perfume"
     },
     {
         "id": 6,
-        "name": "Watch",
+        "name": "NIXON Watch",
         "price": 79.99,
         "imgUrl": "/images/watch.jpg",
         "altText": "A black NIXON watch"

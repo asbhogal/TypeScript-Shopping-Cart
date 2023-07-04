@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 type ProductItemProps = {
   id: number;
@@ -17,7 +17,11 @@ export function ProductItem({
   return (
     <>
       <Box height="80px">
-        <Image src={imgUrl} alt={altText} width="250px" objectFit="cover" />
+        <Image src={imgUrl} alt={altText} objectFit="cover" />
+        <Box display="flex" alignItems="center" justifyContent="space-between">
+          <Text fontSize="lg">{name}</Text>
+          <Text>{price}</Text>
+        </Box>
       </Box>
     </>
   );
