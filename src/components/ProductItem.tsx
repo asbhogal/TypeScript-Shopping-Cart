@@ -1,4 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
+import { formatCurrency } from "../utils/formatCurrency";
 
 type ProductItemProps = {
   id: number;
@@ -20,7 +21,7 @@ export function ProductItem({
         <Image src={imgUrl} alt={altText} objectFit="cover" />
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Text fontSize="lg">{name}</Text>
-          <Text>{price}</Text>
+          <Text>{formatCurrency(price)}</Text>
         </Box>
       </Box>
     </>
