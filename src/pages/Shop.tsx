@@ -7,7 +7,7 @@ export function Shop() {
     <>
       <SimpleGrid minChildWidth="120px" spacing="20px" padding="20px">
         {productItems.map((item) => (
-          <Box key={item.id} height="80px">
+          <Box key={item.id}>
             <ProductItem {...item} />
           </Box>
         ))}

@@ -19,7 +19,7 @@ export function Navbar() {
         <Flex>
           <UnorderedList styleType="none" margin="0">
             <Flex minWidth="max-content" alignItems="center" gap="2">
-              <ListItem>
+              <ListItem textTransform="uppercase">
                 <Link
                   to="/"
                   as={NavLink}
@@ -32,7 +32,7 @@ export function Navbar() {
                   Home
                 </Link>
               </ListItem>
-              <ListItem>
+              <ListItem textTransform="uppercase">
                 <Link
                   to="/about"
                   as={NavLink}
@@ -45,7 +45,7 @@ export function Navbar() {
                   About
                 </Link>
               </ListItem>
-              <ListItem>
+              <ListItem textTransform="uppercase">
                 <Link
                   to="/shop"
                   as={NavLink}

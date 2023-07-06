@@ -18,7 +18,7 @@ export function ProductItem({
   return (
     <>
       <Box height="80px">
-        <Image src={imgUrl} alt={altText} objectFit="cover" />
+        <Image src={imgUrl} alt={altText} objectFit="cover" boxSize="250px" />
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Text fontSize="lg">{name}</Text>
           <Text>{formatCurrency(price)}</Text>
