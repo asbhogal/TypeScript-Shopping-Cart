@@ -19,7 +19,7 @@ export function Navbar() {
         <Flex>
           <UnorderedList styleType="none" margin="0">
             <Flex minWidth="max-content" alignItems="center" gap="2">
-              <ListItem textTransform="uppercase">
+              <ListItem textTransform="uppercase" fontWeight="600">
                 <Link
                   to="/"
                   as={NavLink}
@@ -32,7 +32,7 @@ export function Navbar() {
                   Home
                 </Link>
               </ListItem>
-              <ListItem textTransform="uppercase">
+              <ListItem textTransform="uppercase" fontWeight="600">
                 <Link
                   to="/about"
                   as={NavLink}
@@ -45,7 +45,7 @@ export function Navbar() {
                   About
                 </Link>
               </ListItem>
-              <ListItem textTransform="uppercase">
+              <ListItem textTransform="uppercase" fontWeight="600">
                 <Link
                   to="/shop"
                   as={NavLink}
@@ -64,11 +64,12 @@ export function Navbar() {
           <Button variant="link">
             <Icon as={BsBagHeart} boxSize={8} />
             <Text
-              backgroundColor="purple"
+              backgroundColor="#e3c5a6"
               display="flex"
               justifyContent="center"
               width={5}
-              color="white"
+              color="#111111"
+              fontSize="16px"
               position="absolute"
               top={25}
               left={25}
