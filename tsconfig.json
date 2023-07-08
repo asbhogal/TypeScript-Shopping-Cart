@@ -22,13 +22,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "src",
-    "src/tsconfig.build.json",
-    "./src/**/*.tsx",
-    "./src/**/*.ts",
-    "chakraConfig.ts"
-  ],
+  "include": ["src", "./src/**/*.tsx", "./src/**/*.ts", "chakraConfig.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "types": { "include": ["jest"] }
