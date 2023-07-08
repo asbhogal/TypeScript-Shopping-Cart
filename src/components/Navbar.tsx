@@ -72,15 +72,13 @@ export function Navbar() {
           <Button variant="link">
             <Icon as={LiaShoppingBagSolid} boxSize={8} />
             <Text
-              backgroundColor="#e3c5a6"
               display="flex"
               justifyContent="center"
               width={5}
               color="#111111"
               fontSize="16px"
               position="absolute"
-              top={25}
-              left={25}
+              bottom="3px"
               borderRadius={10}
             >
               1
