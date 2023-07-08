@@ -10,7 +10,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import { BsBagHeart } from "react-icons/bs";
+import { LiaShoppingBagSolid } from "react-icons/lia";
 
 export function Navbar() {
   return (
@@ -62,7 +62,7 @@ export function Navbar() {
           </UnorderedList>
           <Spacer />
           <Button variant="link">
-            <Icon as={BsBagHeart} boxSize={8} />
+            <Icon as={LiaShoppingBagSolid} boxSize={8} />
             <Text
               backgroundColor="#e3c5a6"
               display="flex"
