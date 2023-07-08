@@ -15,7 +15,14 @@ import logoMain from "/logo.svg";
 
 export function Navbar() {
   return (
-    <Box boxShadow="0px 2px 4px rgba(0, 0, 0, 0.2)" p={4}>
+    <Box
+      position="fixed"
+      width="100%"
+      backgroundColor="white"
+      boxShadow="0px 2px 4px rgba(0, 0, 0, 0.2)"
+      p={4}
+      zIndex="2"
+    >
       <header className="header">
         <Flex alignItems="center" justifyContent="space-between">
           <Link to="/" as={NavLink}>
