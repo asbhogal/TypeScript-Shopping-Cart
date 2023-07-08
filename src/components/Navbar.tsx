@@ -19,7 +19,7 @@ export function Navbar() {
       position="fixed"
       width="100%"
       backgroundColor="#F2F0EB"
-      boxShadow="0px 2px 4px rgba(0, 0, 0, 0.2)"
+      borderBottom="1px solid #aaaaaa"
       p={4}
       zIndex="2"
     >

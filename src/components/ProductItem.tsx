@@ -61,7 +61,9 @@ export function ProductItem({
         justifyContent="space-between"
         paddingBottom="5px;"
       >
-        <Text fontSize="lg">{name}</Text>
+        <Text flex="1 0 auto" fontSize="lg">
+          {name}
+        </Text>
         <Box>
           {input.value === 1 ? (
             <Button backgroundColor="transparent" padding="0">
@@ -104,9 +106,7 @@ export function ProductItem({
           )}
         </Box>
       </Box>
-      <Text textAlign={{ base: "column", md: "row" }} fontSize="14px">
-        {formatCurrency(price)}
-      </Text>
+      <Text fontSize="14px">{formatCurrency(price)}</Text>
     </Box>
   );
 }
