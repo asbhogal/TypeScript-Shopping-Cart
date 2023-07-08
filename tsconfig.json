@@ -26,7 +26,8 @@
     "src",
     "src/tsconfig.build.json",
     "./src/**/*.tsx",
-    "./src/**/*.ts"
+    "./src/**/*.ts",
+    "chakraConfig.ts"
   ],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],

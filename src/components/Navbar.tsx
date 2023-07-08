@@ -18,7 +18,7 @@ export function Navbar() {
     <Box
       position="fixed"
       width="100%"
-      backgroundColor="white"
+      backgroundColor="#F2F0EB"
       boxShadow="0px 2px 4px rgba(0, 0, 0, 0.2)"
       p={4}
       zIndex="2"
@@ -83,7 +83,7 @@ export function Navbar() {
               justifyContent="center"
               width={5}
               color="#111111"
-              fontSize="16px"
+              fontSize="14px"
               position="absolute"
               bottom="3px"
               borderRadius={10}
