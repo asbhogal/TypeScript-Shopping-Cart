@@ -11,6 +11,7 @@ import {
 import { HiOutlineChevronUp, HiOutlineChevronDown } from "react-icons/hi";
 import { LiaShoppingBagSolid, LiaTrashAltSolid } from "react-icons/lia";
 import { formatCurrency } from "../utils/formatCurrency";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 type ProductItemProps = {
   id: number;
@@ -40,6 +41,14 @@ export function ProductItem({
   const dec = getDecrementButtonProps();
   const input = getInputProps();
 
+  const {
+    getItemQuantity,
+    increaseItemQuantity,
+    decreaseItemQuantity,
+    removeItemFromCart,
+  } = useShoppingCart();
+  const itemQuantity = getItemQuantity(id);
+  console.log(input.value);
   return (
     <Box height="100%" width="100%">
       <Box height="0" paddingTop="100%" position="relative">
@@ -65,8 +74,12 @@ export function ProductItem({
           {name}
         </Text>
         <Box>
-          {input.value === 1 ? (
-            <Button backgroundColor="transparent" padding="0">
+          {itemQuantity === 0 ? (
+            <Button
+              onClick={() => increaseItemQuantity(id)}
+              backgroundColor="transparent"
+              padding="0"
+            >
               <Icon as={LiaShoppingBagSolid} boxSize={8} />
             </Button>
           ) : (
@@ -74,6 +87,7 @@ export function ProductItem({
               <HStack maxW="320px" width="75%" display="flex" gap="0">
                 <Button
                   {...inc}
+                  onClick={() => increaseItemQuantity(id)}
                   padding="0"
                   backgroundColor="transparent"
                   _hover={{ backgroundColor: "transparent" }}
@@ -82,12 +96,15 @@ export function ProductItem({
                 </Button>
                 <Input
                   {...input}
+                  value={itemQuantity}
+                  onChange={() => increaseItemQuantity(id)}
                   textAlign="center"
                   border="none"
                   padding="0"
                 />
                 <Button
                   {...dec}
+                  onClick={() => decreaseItemQuantity(id)}
                   padding="0"
                   backgroundColor="transparent"
                   _hover={{ backgroundColor: "transparent" }}
@@ -95,6 +112,7 @@ export function ProductItem({
                   <Icon as={HiOutlineChevronDown} boxShadow={2} />
                 </Button>
                 <Button
+                  onClick={() => removeItemFromCart(id)}
                   padding="0"
                   backgroundColor="transparent"
                   _hover={{ backgroundColor: "transparent" }}
