@@ -48,7 +48,7 @@ export function ProductItem({
     removeItemFromCart,
   } = useShoppingCart();
   const itemQuantity = getItemQuantity(id);
-  console.log(input.value);
+  //console.log(input.value);
   return (
     <Box height="100%" width="100%">
       <Box height="0" paddingTop="100%" position="relative">
@@ -79,8 +79,9 @@ export function ProductItem({
               onClick={() => increaseItemQuantity(id)}
               backgroundColor="transparent"
               padding="0"
+              _hover={{ backgroundColor: "transparent" }}
             >
-              <Icon as={LiaShoppingBagSolid} boxSize={8} />
+              <Icon as={LiaShoppingBagSolid} boxSize={6} />
             </Button>
           ) : (
             <Box display="flex" justifyContent="flex-end" gap="10px">
@@ -109,7 +110,7 @@ export function ProductItem({
                   backgroundColor="transparent"
                   _hover={{ backgroundColor: "transparent" }}
                 >
-                  <Icon as={HiOutlineChevronDown} boxShadow={2} />
+                  <Icon as={HiOutlineChevronDown} />
                 </Button>
                 <Button
                   onClick={() => removeItemFromCart(id)}
@@ -117,7 +118,7 @@ export function ProductItem({
                   backgroundColor="transparent"
                   _hover={{ backgroundColor: "transparent" }}
                 >
-                  <Icon as={LiaTrashAltSolid} boxShadow={2} />
+                  <Icon as={LiaTrashAltSolid} boxSize={6} />
                 </Button>
               </HStack>
             </Box>
