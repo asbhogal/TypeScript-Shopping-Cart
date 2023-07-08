@@ -77,7 +77,7 @@ export function Navbar() {
             </Flex>
           </UnorderedList>
           <Button variant="link">
-            <Icon as={LiaShoppingBagSolid} boxSize={8} />
+            <Icon as={LiaShoppingBagSolid} boxSize={10} fill="#111111" />
             <Text
               display="flex"
               justifyContent="center"
@@ -85,8 +85,7 @@ export function Navbar() {
               color="#111111"
               fontSize="14px"
               position="absolute"
-              bottom="3px"
-              borderRadius={10}
+              bottom="7px"
             >
               1
             </Text>
