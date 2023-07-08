@@ -25,5 +25,6 @@
   "include": ["src", "./src/**/*.tsx", "./src/**/*.ts", "chakraConfig.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "types": { "include": ["jest"] }
+  "types": { "include": ["jest"] },
+  "typeAcquisition": { "include": ["jest"] }
 }
