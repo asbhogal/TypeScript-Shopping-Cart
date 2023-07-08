@@ -3,6 +3,7 @@ import {
   Button,
   Flex,
   Icon,
+  Image,
   Link,
   ListItem,
   Spacer,
@@ -11,19 +12,28 @@ import {
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { LiaShoppingBagSolid } from "react-icons/lia";
+import logoMain from "/logo.svg";
 
 export function Navbar() {
   return (
     <Box boxShadow="0px 2px 4px rgba(0, 0, 0, 0.2)" p={4}>
       <header className="header">
-        <Flex>
+        <Flex alignItems="center" justifyContent="space-between">
+          <Link to="/" as={NavLink}>
+            <Image
+              display="flex"
+              src={logoMain}
+              width="50px"
+              alt="The letters L and D in cursive"
+            ></Image>
+          </Link>
           <UnorderedList styleType="none" margin="0">
             <Flex minWidth="max-content" alignItems="center" gap="2">
               <ListItem textTransform="uppercase" fontWeight="600">
                 <Link
                   to="/"
                   as={NavLink}
-                  fontSize={24}
+                  fontSize={18}
                   _hover={{
                     textDecoration: "none",
                     color: "grey",
@@ -36,7 +46,7 @@ export function Navbar() {
                 <Link
                   to="/about"
                   as={NavLink}
-                  fontSize={24}
+                  fontSize={18}
                   _hover={{
                     textDecoration: "none",
                     color: "grey",
@@ -49,7 +59,7 @@ export function Navbar() {
                 <Link
                   to="/shop"
                   as={NavLink}
-                  fontSize={24}
+                  fontSize={18}
                   _hover={{
                     textDecoration: "none",
                     color: "grey",
@@ -60,7 +70,6 @@ export function Navbar() {
               </ListItem>
             </Flex>
           </UnorderedList>
-          <Spacer />
           <Button variant="link">
             <Icon as={LiaShoppingBagSolid} boxSize={8} />
             <Text

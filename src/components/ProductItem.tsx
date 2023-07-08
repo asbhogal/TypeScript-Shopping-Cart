@@ -39,6 +39,7 @@ export function ProductItem({
   const inc = getIncrementButtonProps();
   const dec = getDecrementButtonProps();
   const input = getInputProps();
+
   return (
     <Box height="100%" width="100%">
       <Box height="0" paddingTop="100%" position="relative">
