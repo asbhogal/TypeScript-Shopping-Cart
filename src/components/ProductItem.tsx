@@ -59,6 +59,7 @@ export function ProductItem({
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
         justifyContent="space-between"
+        paddingBottom="5px;"
       >
         <Text fontSize="lg">{name}</Text>
         <Box>
@@ -103,7 +104,9 @@ export function ProductItem({
           )}
         </Box>
       </Box>
-      <Text fontSize="14px">{formatCurrency(price)}</Text>
+      <Text textAlign={{ base: "column", md: "row" }} fontSize="14px">
+        {formatCurrency(price)}
+      </Text>
     </Box>
   );
 }
