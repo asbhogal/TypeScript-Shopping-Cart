@@ -12,7 +12,6 @@ import {
 import { NavLink } from "react-router-dom";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import logoMain from "/logo.svg";
-import { useState } from "react";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 export function Navbar() {
