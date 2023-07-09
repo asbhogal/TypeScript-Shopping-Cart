@@ -1,5 +1,15 @@
-import { Box, Button, Icon, Slide, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Icon,
+  Slide,
+  StackDivider,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import { RxCross2 } from "react-icons/rx";
+import { useShoppingCart } from "../context/ShoppingCartContext";
+import { CartItem } from "./CartItem";
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -7,6 +17,7 @@ type ShoppingCartProps = {
 };
 
 export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
+  const { cartItems } = useShoppingCart();
   return (
     <Slide direction="right" in={isOpen}>
       <Box
@@ -21,14 +32,28 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
         background="#F2F0EB"
         zIndex="5"
         padding="10px"
+        borderLeft="1px solid #111111"
       >
-        <Box display="flex" justifyContent="space-between">
+        <Box display="flex" justifyContent="space-between" alignItems="center">
           <Text fontSize="lg">Cart</Text>
-          <Button onClick={onClose}>
-            <Icon as={RxCross2} boxSize={8} />
+          <Button
+            onClick={onClose}
+            backgroundColor="transparent"
+            padding="0"
+            _hover={{ backgroundColor: "transparent" }}
+          >
+            <Icon as={RxCross2} boxSize={6} />
           </Button>
         </Box>
-        <p>Total Price</p>
+        <VStack
+          divider={<StackDivider borderColor="gray.200" />}
+          spacing={4}
+          align="stretch"
+        >
+          {cartItems.map((item) => (
+            <CartItem key={item.id} {...item}></CartItem>
+          ))}
+        </VStack>
       </Box>
     </Slide>
   );
