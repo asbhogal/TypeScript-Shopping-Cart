@@ -5,7 +5,14 @@
 
 </div>
 
-An e-commerce site which allows the user to add, remove and update quantities of various products in their shopping cart. The data is pulled from a JSON file, and custom hooks are used to update the state of the cart items. This has been built using React with TypeScript and styled using Chakra UI. This repo is currently under development.
+An e-commerce site which allows the user to add, remove and update quantities of various products in their shopping cart. The data is pulled from a JSON file, and custom context and hooks are used to provide data and functionality, manage and update the state of the cart items, as well as store the cart items in the browser. This has been built using React with TypeScript and styled using Chakra UI.
+
+<strong>Features</strong><br>
+ - Add, remove and update quantities of different products
+ - Pulls product data from JSON file
+ - useLocalStorage custom hook to store items in shopping cart
+ - Styled using Chakra UI
+ - Fully responsive
 
 <strong>Stacks Used</strong><br>
 <br>
@@ -15,3 +22,7 @@ An e-commerce site which allows the user to add, remove and update quantities of
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/jest/jest-plain.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/jest/jest-plain.svg" alt="Jest logo" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/eslint/eslint-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/eslint/eslint-original.svg" alt="ESLint logo" width="50" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/vitejs/vite/blob/main/docs/public/logo.svg"><img src="https://github.com/vitejs/vite/blob/main/docs/public/logo.svg" alt="Vite logo" width="50" height="50" style="max-width:100%;"></a>
+
+<strong>Links</strong>
+<br>
+ - <a target="_blank" href="https://typescript-ecommerce-shop.vercel.app/shop">TypeScript Shopping Cart</a>
