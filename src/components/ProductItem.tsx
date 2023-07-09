@@ -78,6 +78,7 @@ export function ProductItem({
             <Button
               onClick={() => increaseItemQuantity(id)}
               backgroundColor="transparent"
+              margin="0 -8px 0 -8px"
               padding="0"
               _hover={{ backgroundColor: "transparent" }}
             >
@@ -114,6 +115,7 @@ export function ProductItem({
                 </Button>
                 <Button
                   onClick={() => removeItemFromCart(id)}
+                  margin="0 -8px 0 -8px"
                   padding="0"
                   backgroundColor="transparent"
                   _hover={{ backgroundColor: "transparent" }}

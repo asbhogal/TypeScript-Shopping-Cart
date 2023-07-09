@@ -49,11 +49,12 @@ export function CartItem({ id, input }: CartItemProps) {
           </Text>
           <Button
             onClick={() => removeItemFromCart(id)}
+            margin="0 -8px 0 -8px"
             padding="0"
             backgroundColor="transparent"
             _hover={{ backgroundColor: "transparent" }}
           >
-            <Icon as={LiaTrashAltSolid} boxSize={6} />
+            <Icon as={LiaTrashAltSolid} boxSize={6} color="gray.500" />
           </Button>
         </Box>
       </Box>
