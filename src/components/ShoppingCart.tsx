@@ -24,15 +24,15 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
         display="flex"
         flexDirection="column"
         backgroundColor="red"
-        width="300px"
+        width="18.75rem"
         position="absolute"
         right="0"
         top="0"
         height="100vh"
         background="#F2F0EB"
         zIndex="5"
-        padding="10px"
-        borderLeft="1px solid #111111"
+        padding=".625rem"
+        borderLeft=".0625rem solid #111111"
       >
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Text fontSize="lg">Cart</Text>

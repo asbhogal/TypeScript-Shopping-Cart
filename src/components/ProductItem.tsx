@@ -68,7 +68,7 @@ export function ProductItem({
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
         justifyContent="space-between"
-        paddingBottom="5px;"
+        paddingBottom=".3125rem;"
       >
         <Text flex="1 0 auto" fontSize="lg">
           {name}
@@ -78,15 +78,15 @@ export function ProductItem({
             <Button
               onClick={() => increaseItemQuantity(id)}
               backgroundColor="transparent"
-              margin="0 -8px 0 -8px"
+              margin="0 -0.5rem 0 -0.5rem"
               padding="0"
               _hover={{ backgroundColor: "transparent" }}
             >
               <Icon as={LiaShoppingBagSolid} boxSize={6} />
             </Button>
           ) : (
-            <Box display="flex" justifyContent="flex-end" gap="10px">
-              <HStack maxW="320px" width="75%" display="flex" gap="0">
+            <Box display="flex" justifyContent="flex-end" gap=".625rem">
+              <HStack maxW="20rem" width="75%" display="flex" gap="0">
                 <Button
                   {...inc}
                   onClick={() => increaseItemQuantity(id)}
@@ -115,7 +115,7 @@ export function ProductItem({
                 </Button>
                 <Button
                   onClick={() => removeItemFromCart(id)}
-                  margin="0 -8px 0 -8px"
+                  margin="0 -0.5rem 0 -0.5rem"
                   padding="0"
                   backgroundColor="transparent"
                   _hover={{ backgroundColor: "transparent" }}
@@ -127,7 +127,7 @@ export function ProductItem({
           )}
         </Box>
       </Box>
-      <Text fontSize="14px">{formatCurrency(price)}</Text>
+      <Text fontSize=".875rem">{formatCurrency(price)}</Text>
     </Box>
   );
 }

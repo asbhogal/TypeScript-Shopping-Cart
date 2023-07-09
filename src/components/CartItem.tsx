@@ -27,11 +27,11 @@ export function CartItem({ id, input }: CartItemProps) {
       spacing={4}
       align="stretch"
     >
-      <Box display="flex" justifyContent="space-between" height="80px">
+      <Box display="flex" justifyContent="space-between" height="5rem">
         <Image
           src={item.imgUrl}
           alt={item.altText}
-          boxSize="80px"
+          boxSize="5rem"
           objectFit="cover"
         />
         <Box
@@ -41,15 +41,15 @@ export function CartItem({ id, input }: CartItemProps) {
           textAlign="right"
         >
           <Text>{item.name}</Text>
-          <Text fontSize="12px" color="gray.500">
+          <Text fontSize=".75rem" color="gray.500">
             Quantity: {input}
           </Text>
-          <Text fontSize="12px" color="gray.500">
+          <Text fontSize=".75rem" color="gray.500">
             {formatCurrency(item.price * input)}
           </Text>
           <Button
-            onClick={() => removeItemFromCart(id)}
-            margin="0 -8px 0 -8px"
+            onClick={() => removeItemFromCart(item.id)}
+            margin="0 -.5rem 0 -.5rem"
             padding="0"
             backgroundColor="transparent"
             _hover={{ backgroundColor: "transparent" }}
