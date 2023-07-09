@@ -12,8 +12,11 @@ import {
 import { NavLink } from "react-router-dom";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import logoMain from "/logo.svg";
+import { useState } from "react";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 export function Navbar() {
+  const { openCart, cartQuantity } = useShoppingCart();
   return (
     <Box
       position="fixed"
@@ -76,7 +79,7 @@ export function Navbar() {
               </ListItem>
             </Flex>
           </UnorderedList>
-          <Button variant="link">
+          <Button variant="link" onClick={openCart}>
             <Icon as={LiaShoppingBagSolid} boxSize={10} fill="#111111" />
             <Text
               display="flex"
@@ -87,7 +90,7 @@ export function Navbar() {
               position="absolute"
               bottom="7px"
             >
-              1
+              {cartQuantity}
             </Text>
           </Button>
         </Flex>
