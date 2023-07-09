@@ -10,6 +10,7 @@ An e-commerce site which allows the user to add, remove and update quantities of
 <strong>Features</strong><br>
  - Add, remove and update quantities of different products
  - Pulls product data from JSON file
+ - ShoppingCartContext used to manage and update state of cart items
  - useLocalStorage custom hook to store items in shopping cart
  - Styled using Chakra UI
  - Fully responsive
