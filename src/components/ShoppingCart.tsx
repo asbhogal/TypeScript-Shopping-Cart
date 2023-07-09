@@ -3,7 +3,7 @@ import { RxCross2 } from "react-icons/rx";
 
 type ShoppingCartProps = {
   isOpen: boolean;
-  onClose: () => void;
+  onClose?: () => void;
 };
 
 export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
