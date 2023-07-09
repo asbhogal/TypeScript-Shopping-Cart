@@ -1,21 +1,25 @@
 import {
   Box,
   Button,
-  Flex,
   Icon,
   Image,
+  Flex,
   Link,
   ListItem,
   Text,
   UnorderedList,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import logoMain from "/logo.svg";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import { ShoppingCart } from "./ShoppingCart";
 
 export function Navbar() {
-  const { openCart, cartQuantity } = useShoppingCart();
+  const { cartQuantity } = useShoppingCart();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Box
       position="fixed"
@@ -33,7 +37,7 @@ export function Navbar() {
               src={logoMain}
               width="50px"
               alt="The letters L and D in cursive"
-            ></Image>
+            />
           </Link>
           <UnorderedList styleType="none" margin="0">
             <Flex minWidth="max-content" alignItems="center" gap="2">
@@ -78,7 +82,7 @@ export function Navbar() {
               </ListItem>
             </Flex>
           </UnorderedList>
-          <Button variant="link" onClick={openCart}>
+          <Button variant="link" onClick={onOpen}>
             <Icon as={LiaShoppingBagSolid} boxSize={10} fill="#111111" />
             <Text
               display="flex"
@@ -92,6 +96,7 @@ export function Navbar() {
               {cartQuantity}
             </Text>
           </Button>
+          <ShoppingCart isOpen={isOpen} onClose={onClose} />
         </Flex>
       </header>
     </Box>
