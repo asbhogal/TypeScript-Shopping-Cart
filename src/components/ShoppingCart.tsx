@@ -23,6 +23,7 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
       <Box
         display="flex"
         flexDirection="column"
+        justifyContent="space-between"
         backgroundColor="red"
         width="18.75rem"
         position="absolute"
@@ -34,26 +35,44 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
         padding=".625rem"
         borderLeft=".0625rem solid #111111"
       >
-        <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Text fontSize="lg">Cart</Text>
-          <Button
-            onClick={onClose}
-            backgroundColor="transparent"
-            padding="0"
-            _hover={{ backgroundColor: "transparent" }}
+        <Box display="flex" flexDirection="column" gap="50px">
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
           >
-            <Icon as={RxCross2} boxSize={6} />
-          </Button>
+            <Text fontSize="lg">Cart</Text>
+            <Button
+              onClick={onClose}
+              backgroundColor="transparent"
+              padding="0"
+              _hover={{ backgroundColor: "transparent" }}
+            >
+              <Icon as={RxCross2} boxSize={6} />
+            </Button>
+          </Box>
+          <VStack
+            divider={<StackDivider borderColor="gray.200" />}
+            spacing={4}
+            align="stretch"
+          >
+            {cartItems.map((item) => (
+              <CartItem key={item.id} {...item}></CartItem>
+            ))}
+          </VStack>
         </Box>
-        <VStack
-          divider={<StackDivider borderColor="gray.200" />}
-          spacing={4}
-          align="stretch"
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          borderColor="gray.200"
         >
-          {cartItems.map((item) => (
-            <CartItem key={item.id} {...item}></CartItem>
-          ))}
-        </VStack>
+          <Text fontWeight="500" fontSize="lg">
+            Total
+          </Text>
+          <Text fontWeight="500" fontSize="lg">
+            $$$
+          </Text>
+        </Box>
       </Box>
     </Slide>
   );

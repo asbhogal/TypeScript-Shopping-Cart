@@ -1,6 +1,6 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
 import productItems from "../data/products.json";
-import { ProductItem } from "../components/ProductItem";
+import { StoreItem } from "../components/StoreItem";
 
 export function Shop() {
   return (
@@ -14,7 +14,7 @@ export function Shop() {
       >
         {productItems.map((item) => (
           <Box key={item.id}>
-            <ProductItem {...item} />
+            <StoreItem {...item} />
           </Box>
         ))}
       </SimpleGrid>

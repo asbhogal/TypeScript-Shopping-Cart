@@ -13,7 +13,7 @@ import { LiaShoppingBagSolid, LiaTrashAltSolid } from "react-icons/lia";
 import { formatCurrency } from "../utils/formatCurrency";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
-type ProductItemProps = {
+type StoreItemProps = {
   id: number;
   name: string;
   price: number;
@@ -21,13 +21,13 @@ type ProductItemProps = {
   altText: string;
 };
 
-export function ProductItem({
+export function StoreItem({
   id,
   name,
   price,
   imgUrl,
   altText,
-}: ProductItemProps) {
+}: StoreItemProps) {
   const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
     useNumberInput({
       step: 1,
@@ -68,7 +68,6 @@ export function ProductItem({
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
         justifyContent="space-between"
-        paddingBottom=".3125rem;"
       >
         <Text flex="1 0 auto" fontSize="lg">
           {name}
