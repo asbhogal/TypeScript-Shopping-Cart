@@ -10,7 +10,10 @@ export function Shop() {
         top="4.0625rem"
         minChildWidth="16.5625rem"
         spacing="1.25rem"
-        padding="1.25rem"
+        maxWidth="93.75rem"
+        width="100%"
+        margin="0 auto"
+        padding="2.5rem 0"
       >
         {productItems.map((item) => (
           <Box key={item.id}>
@@ -20,7 +23,7 @@ export function Shop() {
       </SimpleGrid>
       <Box
         position="absolute"
-        padding="150px 10px 10px 10px"
+        padding="9.375rem .625rem .625rem .625rem"
         fontSize="0.85rem"
         textAlign="center"
         width="100%"
