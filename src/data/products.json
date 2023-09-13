@@ -1,45 +1,107 @@
 [
-    {
-        "id": 1,
-        "name": "Biege Coat",
-        "price": 146.99,
-        "imgUrl": "/images/coat.jpg",
-        "altText": "A biege coat in a mirror"
-    },
-    {
-        "id": 2,
-        "name": "Concealer",
-        "price": 23.99,
-        "imgUrl": "/images/concealer.jpg",
-        "altText": "A pale pink concealer with a mirror"
-    },
-    {
-        "id": 3,
-        "name": "Earrings",
-        "price": 59.99,
-        "imgUrl": "/images/earrings.jpg",
-        "altText": "A pair of ornate earrings"
-    },
-    {
-        "id": 4,
-        "name": "Lipstick",
-        "price": 65.99,
-        "imgUrl": "/images/lipstick.jpg",
-        "altText": "A red lipstick surrounded by figs"
-    },
-    {
-        "id": 5,
-        "name": "Prada Perfume",
-        "price": 99.99,
-        "imgUrl": "/images/prada.jpg",
-        "altText": "A bottle of Prada perfume"
-    },
-    {
-        "id": 6,
-        "name": "NIXON Watch",
-        "price": 79.99,
-        "imgUrl": "/images/watch.jpg",
-        "altText": "A black NIXON watch"
-    }
-    
+  {
+    "id": 1,
+    "name": "Biege Trench Coat",
+    "price": 146.99,
+    "imgUrl": "/images/coat.jpg",
+    "altText": "A biege coat in a mirror"
+  },
+  {
+    "id": 2,
+    "name": "Nude Concealer",
+    "price": 23.99,
+    "imgUrl": "/images/concealer.jpg",
+    "altText": "A pale pink concealer with a mirror"
+  },
+  {
+    "id": 3,
+    "name": "Clam Earrings",
+    "price": 59.99,
+    "imgUrl": "/images/earrings.jpg",
+    "altText": "A pair of ornate earrings"
+  },
+  {
+    "id": 4,
+    "name": "Lipstick",
+    "price": 65.99,
+    "imgUrl": "/images/lipstick.jpg",
+    "altText": "A red lipstick surrounded by figs"
+  },
+  {
+    "id": 5,
+    "name": "Prada Perfume",
+    "price": 99.99,
+    "imgUrl": "/images/prada.jpg",
+    "altText": "A bottle of Prada perfume"
+  },
+  {
+    "id": 6,
+    "name": "NIXON Watch",
+    "price": 79.99,
+    "imgUrl": "/images/watch.jpg",
+    "altText": "A black NIXON watch"
+  },
+  {
+    "id": 7,
+    "name": "Gold-Rimmed HTC",
+    "price": 479.99,
+    "imgUrl": "/images/HTC.jpg",
+    "altText": "A black and gold HTC Phone"
+  },
+  {
+    "id": 8,
+    "name": "Hornet Choker",
+    "price": 179.99,
+    "imgUrl": "/images/Choker.jpg",
+    "altText": "A black choker with a large hornet emblem"
+  },
+  {
+    "id": 9,
+    "name": "Saint Jane 15ml",
+    "price": 99.99,
+    "imgUrl": "/images/SaintJane.jpg",
+    "altText": "A black NIXON watch"
+  },
+  {
+    "id": 10,
+    "name": "Gillemore Gin 500ml",
+    "price": 79.99,
+    "imgUrl": "/images/Gillemore.jpg",
+    "altText": "A bottle of luxury Gillemore Gin with glass paraphernalia"
+  },
+  {
+    "id": 11,
+    "name": "Coco Chanel 15ml",
+    "price": 59.99,
+    "imgUrl": "/images/CocoChanel.jpg",
+    "altText": "A bottle of Coco Chanel on top of two stacked books"
+  },
+  {
+    "id": 12,
+    "name": "Georgio Armani 50ml",
+    "price": 89.99,
+    "imgUrl": "/images/GeorgioArmani.jpg",
+    "altText": "A bottle of Georgio Armani aftershave"
+  },
+  {
+    "id": 13,
+    "name": "Gold Pendant & Bracelet",
+    "price": 239.99,
+    "imgUrl": "/images/PendantNecklace.jpg",
+    "altText": "A gold pendant necklace and bracelet"
+  },
+  {
+    "id": 14,
+    "name": "Nécessaire 50ml",
+    "price": 49.99,
+    "imgUrl": "/images/Deodorant.jpg",
+    "altText": "A box of Deodorant"
+  },
+  {
+    "id": 15,
+    "name": "Prada 50ml",
+    "price": 89.99,
+    "imgUrl": "/images/PradaPerfume.jpg",
+    "altText": "A bottle of Prada perfum"
+  }
 ]
