@@ -18,6 +18,18 @@ export function Shop() {
           </Box>
         ))}
       </SimpleGrid>
+      <Box
+        position="absolute"
+        padding="150px 10px 10px 10px"
+        fontSize="0.85rem"
+        textAlign="center"
+        width="100%"
+      >
+        The products on this page are purely for demonstrable purposes only. No
+        orders will be fulfilled. Any trademarks remain the sole right of the
+        respective owners. The owner of this site assumes no ownership of any
+        trademarks represented herein.
+      </Box>
     </>
   );
 }
