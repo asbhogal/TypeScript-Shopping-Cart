@@ -13,7 +13,7 @@ export function Shop() {
         maxWidth="93.75rem"
         width="100%"
         margin="0 auto"
-        padding="3.125rem"
+        padding="1.5625rem"
       >
         {productItems.map((item) => (
           <Box key={item.id}>
