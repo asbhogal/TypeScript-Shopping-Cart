@@ -84,7 +84,11 @@ export function StoreItem({
               <Icon as={LiaShoppingBagSolid} boxSize={6} />
             </Button>
           ) : (
-            <Box display="flex" justifyContent="flex-end" gap=".625rem">
+            <Box
+              display="flex"
+              justifyContent={{ base: "center", md: "flex-end" }}
+              gap=".625rem"
+            >
               <HStack maxW="20rem" width="75%" display="flex" gap="0">
                 <Button
                   {...inc}
@@ -126,7 +130,9 @@ export function StoreItem({
           )}
         </Box>
       </Box>
-      <Text fontSize=".875rem">{formatCurrency(price)}</Text>
+      <Text fontSize=".875rem" textAlign={{ base: "center", md: "left" }}>
+        {formatCurrency(price)}
+      </Text>
     </Box>
   );
 }

@@ -37,7 +37,7 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
         padding=".625rem"
         borderLeft=".0625rem solid #111111"
       >
-        <Box display="flex" flexDirection="column" gap="50px">
+        <Box display="flex" flexDirection="column" gap="3.125rem">
           <Box
             display="flex"
             justifyContent="space-between"
@@ -67,8 +67,8 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
         <Box
           display="flex"
           justifyContent="space-between"
-          borderTop="1px solid #111111"
-          padding="15px 0"
+          borderTop=".0625rem solid #111111"
+          padding=".9375rem 0"
         >
           <Text fontWeight="500" fontSize="lg">
             Total

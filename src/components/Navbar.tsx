@@ -25,7 +25,7 @@ export function Navbar() {
       position="fixed"
       width="100%"
       backgroundColor="#F2F0EB"
-      borderBottom="1px solid #aaaaaa"
+      borderBottom=".0625rem solid #aaaaaa"
       p={4}
       zIndex="2"
     >
@@ -35,7 +35,7 @@ export function Navbar() {
             <Image
               display="flex"
               src={logoMain}
-              width="50px"
+              width="3.125rem"
               alt="The letters L and D in cursive"
             />
           </Link>
@@ -89,9 +89,9 @@ export function Navbar() {
               justifyContent="center"
               width={5}
               color="#111111"
-              fontSize="14px"
+              fontSize=".875rem"
               position="absolute"
-              bottom="7px"
+              bottom=".4375rem"
             >
               {cartQuantity}
             </Text>
