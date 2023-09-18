@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import { ChakraProvider } from "@chakra-ui/react";
 import customTheme from "../chakraConfig.ts";
+import "@fontsource/poiret-one";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

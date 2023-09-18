@@ -43,7 +43,9 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
             justifyContent="space-between"
             alignItems="center"
           >
-            <Text fontSize="lg">Cart</Text>
+            <Text fontSize="lg" fontWeight="600">
+              Cart
+            </Text>
             <Button
               onClick={onClose}
               backgroundColor="transparent"
@@ -70,10 +72,10 @@ export function ShoppingCart({ isOpen, onClose }: ShoppingCartProps) {
           borderTop=".0625rem solid #111111"
           padding=".9375rem 0"
         >
-          <Text fontWeight="500" fontSize="lg">
+          <Text fontWeight="600" fontSize="lg">
             Total
           </Text>
-          <Text fontWeight="500" fontSize="lg">
+          <Text fontWeight="600" fontSize="lg">
             {formatCurrency(
               cartItems.reduce((total, cartItem) => {
                 const item = storeItems.find((item) => item.id === cartItem.id);

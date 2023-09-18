@@ -69,7 +69,7 @@ export function StoreItem({
         alignItems="center"
         justifyContent="space-between"
       >
-        <Text flex="1 0 auto" fontSize="lg">
+        <Text flex="1 0 auto" fontSize="lg" fontWeight="600">
           {name}
         </Text>
         <Box>
@@ -88,8 +88,11 @@ export function StoreItem({
               display="flex"
               justifyContent={{ base: "center", md: "flex-end" }}
               gap=".625rem"
+              marginLeft={{ base: "0", md: "-3.2em" }}
+              zIndex="1"
+              backgroundColor="#F2F0EB"
             >
-              <HStack maxW="20rem" width="75%" display="flex" gap="0">
+              <HStack maxW="20rem" width="85%" display="flex" gap="0">
                 <Button
                   {...inc}
                   onClick={() => increaseItemQuantity(id)}
@@ -106,6 +109,7 @@ export function StoreItem({
                   textAlign="center"
                   border="none"
                   padding="0"
+                  fontWeight="600"
                 />
                 <Button
                   {...dec}
@@ -130,7 +134,11 @@ export function StoreItem({
           )}
         </Box>
       </Box>
-      <Text fontSize=".875rem" textAlign={{ base: "center", md: "left" }}>
+      <Text
+        fontSize=".875rem"
+        fontWeight="600"
+        textAlign={{ base: "center", md: "left" }}
+      >
         {formatCurrency(price)}
       </Text>
     </Box>

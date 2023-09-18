@@ -40,11 +40,11 @@ export function CartItem({ id, input }: CartItemProps) {
           alignItems="flex-end"
           textAlign="right"
         >
-          <Text>{item.name}</Text>
-          <Text fontSize=".75rem" color="gray.500">
+          <Text fontWeight="600">{item.name}</Text>
+          <Text fontSize=".75rem" color="gray.700" fontWeight="600">
             Quantity: {input}
           </Text>
-          <Text fontSize=".75rem" color="gray.500">
+          <Text fontSize=".75rem" color="gray.700" fontWeight="600">
             {formatCurrency(item.price * input)}
           </Text>
           <Button
@@ -54,7 +54,7 @@ export function CartItem({ id, input }: CartItemProps) {
             backgroundColor="transparent"
             _hover={{ backgroundColor: "transparent" }}
           >
-            <Icon as={LiaTrashAltSolid} boxSize={6} color="gray.500" />
+            <Icon as={LiaTrashAltSolid} boxSize={6} color="gray.700" />
           </Button>
         </Box>
       </Box>

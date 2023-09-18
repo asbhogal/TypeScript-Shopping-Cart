@@ -1,6 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  fonts: {
+    heading: `'Poiret One', sans-serif`,
+    body: `'Poiret One', sans-serif`,
+  },
   styles: {
     global: {
       body: {
